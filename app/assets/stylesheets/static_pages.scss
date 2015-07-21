@@ -12,7 +12,7 @@ div.push-content { height: 50px; }
 
 div.block {
   border: 1px solid black;
-  background: url("paper.jpg");
+  background: image-url("paper.jpg");
   background-size: 100% 100%;
   background-repeat: no-repeat;
   min-height: 300px;
@@ -28,7 +28,7 @@ div.subheading {
 div.main {
   padding: 60px 50px 100px 50px;
   font-family: 'Shadows Into Light';
-  background: url("water-drop.jpg");
+  background: image-url("water-drop.jpg");
   background-size: 130% 100%;
   background-repeat: no-repeat;
   color: #000;
