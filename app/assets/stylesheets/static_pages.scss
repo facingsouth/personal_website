@@ -1,3 +1,45 @@
 // Place all the styles related to the static_pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+@import url('http://fonts.googleapis.com/css?family=Shadows+Into+Light');
+
+body {
+
+}
+
+div.push-content { height: 100px; }
+
+div.block {
+  border: 1px solid black;
+  background-image: url("paper.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  min-height: 300px;
+  padding: 0 50px 0 50px;
+  margin:20px 0 0 0;
+}
+
+div.subheading {
+  margin-top: 50px;
+  text-align: center;
+}
+
+div.main {
+  padding: 60px 50px 100px 50px;
+  font-family: 'Shadows Into Light';
+  background-image: url("water-drop.jpg");
+  background-size: 130% 100%;
+  background-repeat: no-repeat;
+  color: #000;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+div.contact-info {
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+}
