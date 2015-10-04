@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,6 +13,7 @@
 
     <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -105,7 +105,7 @@
                 <div class="col-xs-12">
                     <h2>Portfolio</h2>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-md-12">
                     <div class="col-xs-12 portfolio">
                     <h4>Danebook</h4>
                     <p>A social networking site supports users’ posting, commenting, liking, friending each other, photo uploading.</p>
@@ -114,22 +114,31 @@
                     <a target="_blank" href="http://www.danebook.tk" class="btn btn-default btn-lg">Visit Danebook</a>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-md-12">
                     <div class="col-xs-12 portfolio">
-                    <h4>Cheaper Ride</h4>
-                    <p>A ride-sharing price comparison site which integrated data from multiple ride-sharing company APIs, local taxi rate API, public transit API.</p>
+                    <h4>Djello</h4>
+                    <p>A single page project management application. Back-end was built with Ruby on Rails for serving data in JSON format. Front-end was built with AngularJS. Angular plugins like UI Router, Restangular, AngularDevise were used.</p>
                     </div>
                     <div class="col-xs-12">
-                    <a target="_blank" href="https://cheaperride.herokuapp.com" class="btn btn-default btn-lg">Visit Cheaper Ride</a>
+                    <a target="_blank" href="https://djello.herokuapp.com" class="btn btn-default btn-lg">Visit Djello</a>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-md-12">
                     <div class="col-xs-12 portfolio">
                     <h4>Game Center</h4>
-                    <p>A browser game center, includes several classic games like Minesweeper, Tetris, Snake, Breakout etc.</p>
+                    <p>A browser game center. The game center includes several classic games, e.g. Breakout, Minesweeper, Tetris, and Snake etc. All the games were built with JavaScript, jQuery.</p>
                     </div>
                     <div class="col-xs-12">
                     <a target="_blank" href="https://facingsouth.github.io/project_game_center_browser/home" class="btn btn-default btn-lg">Visit Game Center</a>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="col-xs-12 portfolio">
+                    <h4>Cheaper Ride</h4>
+                    <p>A ride-sharing price comparison site which integrated data from multiple ride-sharing company APIs, local taxi rate API, public transit API. Used Ruby on Rails as the back-end.</p>
+                    </div>
+                    <div class="col-xs-12">
+                    <a target="_blank" href="https://cheaperride.herokuapp.com" class="btn btn-default btn-lg">Visit Cheaper Ride</a>
                     </div>
                 </div>
             </div>
@@ -159,22 +168,22 @@
                     <li>
                     Viking Code School &nbsp (Jun. 2015 - Present)
                         <ul>
-                        <li>Design, develop, test and deploy modern web applications using Ruby on rails, jQuery, AngularJS.</li>
+                        <li>Viking Code School is a highly selective 16-week bootcamp for learning professional software engineering. The program offers project-based learning around an Agile approach with daily SCRUM meetings, pair programming and code review. Major technologies used include Ruby, Ruby on Rails, Sinatra, SQL, Data Modeling, HTML5, CSS3, JavaScript, AngularJS, Git.</li>
                         </ul>
                     </li>
                     <li>University of Utah, Salt Lake City, UT. &nbsp (2011)
                         <ul>
-                            <li>Ph.D., Physics  </li>
+                            <li>PhD, Physics  </li>
                         </ul>
                     </li>
                     <li>University of Utah, Salt Lake City, UT. &nbsp (2006)
                         <ul>
-                            <li>M.S., Physics    </li>
+                            <li>MS, Physics    </li>
                         </ul>
                     </li>
                     <li>University of Science and Technology of China (USTC), Hefei, China. &nbsp (2003)
                         <ul>
-                            <li>B.S., Physics    </li>
+                            <li>BS, Physics    </li>
                         </ul>
                     </li>
                 </ul>
@@ -187,11 +196,53 @@
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
                 <h2>Tech Skills</h2>
-                <%= image_tag "web.png", class: "logo"%>
-                <%= image_tag "angular.png", class: "logo"%><br>
-                <%= image_tag "ruby.png", class: "logo"%>
-                <%= image_tag "rails.png", class: "logo"%>
-                <%= image_tag "pg.svg", class: "logo"%>
+
+                <ul class="img-list">
+                  <li>
+                    <a href="">
+                      <%= image_tag "html.png", class: "logo"%>
+                      <span class="text-content"><span>HTML5</span></span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <%= image_tag "css.png", class: "logo"%>
+                      <span class="text-content"><span>CSS3</span></span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <%= image_tag "js.png", class: "logo"%>
+                      <span class="text-content"><span>JavaScript</span></span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <%= image_tag "angular.png", class: "logo"%>
+                      <span class="text-content"><span>AngularJS</span></span>
+                    </a>
+                  </li>
+              </ul>
+              <ul class="img-list">
+                  <li>
+                    <a href="">
+                      <%= image_tag "ruby.png", class: "logo"%>
+                      <span class="text-content"><span>Ruby</span></span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <%= image_tag "rails.png", class: "logo"%>
+                      <span class="text-content"><span>Rails</span></span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <%= image_tag "pg.svg", class: "logo"%>
+                      <span class="text-content"><span>PostgreSQL</span></span>
+                    </a>
+                  </li>
+                </ul>
             </div>
         </div>
     </section>
